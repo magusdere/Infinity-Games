@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Game {
+    constructor(name, category, assessment, synopsis, characteristics, description, minimumRequirements, RecommendedRequirements) {
+        this.name = name;
+        this.category = category;
+        this.assessment = assessment;
+        this.synopsis = synopsis;
+        this.characteristics = characteristics;
+        this.description = description;
+        this.minimumRequirements = minimumRequirements;
+        this.RecommendedRequirements = RecommendedRequirements;
+    }
+}
+
+function MinimumRequirements(so, procesador, memoria, graficos, directx, red, almacenamiento){
+    this.so = so;
+    this.procesador = procesador;
+    this.memoria = memoria;
+    this.graficos = graficos;
+    this.directx = directx;
+    this.red = red;
+    this.almacenamiento = almacenamiento;
+}
+
+function RecommendedRequirements(so, procesador, memoria, graficos, directx, red, almacenamiento){
+    this.so = so;
+    this.procesador = procesador;
+    this.memoria = memoria;
+    this.graficos = graficos;
+    this.directx = directx;
+    this.red = red;
+    this.almacenamiento = almacenamiento;
+}
+
+
+var minimumRequirementsFifa = new MinimumRequirements("Windows 10 64-bits", "Intel Core i5 6600k or AMD Ryzen 5 1600", "8 GB de RAM", "NVIDIA GeForce GTX 1050 Ti or AMD Radeon RX 570", "Versión 12", "Conexión de banda ancha a Internet", "100 GB de espacio disponible")
+
+var minimumRequirementsGOW = new MinimumRequirements("Windows 10 64-bits", " Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)", "8 GB de RAM", " NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)", " Versión 11", "Conexión de banda ancha a Internet", "70 GB de espacio disponible")
+
+var recommendedRequirementsFifa = new RecommendedRequirements("Windows 10 64-bits", "Intel Core i7 6700 or AMD Ryzen 7 2700X", "12 GB de RAM", " NVIDIA GeForce GTX 1660 or AMD Radeon RX 5600 XT", "Versión 12", "Conexión de banda ancha a Internet", "100 GB de espacio disponible")
+
+var recommendedRequirementsGOW = new RecommendedRequirements("Windows 10 64-bits", "Intel i5-6600k (4 core 3.5 GHz) or AMD Ryzen 5 2400 G (4 core 3.6 GHz)", "8 GB de RAM", " NVIDIA GTX 1060 (6 GB) or AMD RX 570 (4 GB)", "Versión 11", "Conexión de banda ancha a Internet", "70 GB de espacio disponible")
+
+var fifa = new Game("Fifa 23", "sports", "⭐⭐⭐⭐⭐", "FIFA 23 te trae todo el realismo del Juego de Todos con la tecnología HyperMotion2, la FIFA World Cup™ masculina y femenina, que estarán disponibles durante la temporada, equipos de clubes femeniles, el Cross-Play* y mucho más.",["JcJ en linea", "Un jugador", "JcJ en pantalla dividida", "Cooperativo en linea", "Logros de Infinity Games"],"FIFA 23 es un videojuego de simulación de fútbol publicado por Electronic Arts. Es la trigésima entrega de la serie FIFA desarrollada por EA Sports, y la última entrega bajo el estandarte de FIFA, y lanzada en todo el mundo el 30 de septiembre de 2022 para PC, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X. /S y Google Stadia. Sin embargo, los jugadores que reservaron la Ultimate Edition recibieron tres días de acceso anticipado y pudieron jugar el juego a partir del 27 de septiembre.", minimumRequirementsFifa, recommendedRequirementsFifa)
+
+var GOW = new Game("God of War", "action", "⭐⭐⭐⭐⭐", "Habiendo consumado su venganza contra los dioses el Olimpo años atrás, Kratos ahora vive como un hombre en el reino de los dioses y los monstruos nórdicos. En este hostil e inhóspito mundo, debe pelear por sobrevivir... y enseñarle a su hijo a hacer lo mismo.",["Un jugador", "Logros Infinity Games", "Compatible con mando"],"God of War Ragnarök es un videojuego de acción y aventuras desarrollado por Santa Monica Studio y publicado por Sony Interactive Entertainment (SIE). Se lanzó en todo el mundo el 9 de noviembre de 2022 para PlayStation 4 y PlayStation 5, lo que marca el primer lanzamiento entre generaciones de la serie. Es la novena entrega de la saga de God of War, la novena cronológicamente y la secuela de God of War de 2018. Basado libremente en la mitología nórdica, el juego se desarrolla en la antigua Escandinavia y presenta al protagonista de la serie Kratos y su hijo adolescente Atreus. Concluyendo la era nórdica de la serie, el juego cubre el Ragnarök, el evento escatológico que es central en la mitología nórdica y se predijo que sucedería en el juego anterior después de que Kratos matara al dios Æsir Baldur.", minimumRequirementsGOW, recommendedRequirementsGOW)
+    </script>
+</body>
+</html>
